@@ -1,0 +1,39 @@
+/* ================================
+   MENU LIST GRID — COFFEE STYLE
+   MOBILE FIRST
+================================ */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+/* Empty state */
+
+.menu-empty {
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
+  padding: 36px 0;
+}
+
+/* ================================
+   TABLET
+================================ */
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+/* ================================
+   DESKTOP
+================================ */
+@media (min-width: 1200px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

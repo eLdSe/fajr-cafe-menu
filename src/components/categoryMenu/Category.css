@@ -1,0 +1,62 @@
+/* ================================
+   CATEGORY TABS — COFFEE STYLE
+   MOBILE FIRST
+================================ */
+
+.category-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+
+  scrollbar-width: none;
+}
+
+.category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tab */
+
+.category-tab {
+  background: #1f1f1f;
+  border: 1px solid #2a2a2a;
+  border-radius: 999px;
+
+  padding: 7px 14px;
+  font-size: 13px;
+
+  color: #ffffff;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  transition: background 0.18s ease, transform 0.12s ease;
+}
+
+.category-tab:hover {
+  background: #2a2a2a;
+}
+
+/* Active */
+
+.category-tab.active {
+  background: #c9a46a;
+  color: #000000;
+  border-color: #c9a46a;
+}
+
+/* ================================
+   TABLET +
+================================ */
+@media (min-width: 768px) {
+  .category-tabs {
+    gap: 12px;
+  }
+
+  .category-tab {
+    font-size: 14px;
+    padding: 9px 18px;
+  }
+}
