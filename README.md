@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# 🍽 QR Cafe Ordering System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+QR Cafe Ordering System — это современная цифровая система заказов для кафе и ресторанов, разработанная с использованием React и Firebase. Проект направлен на автоматизацию процесса обслуживания гостей и замену традиционных бумажных меню удобным и быстрым QR-решением.
 
-## Available Scripts
+Система построена по принципу mobile-first, так как основное взаимодействие происходит через смартфон пользователя. Гость сканирует QR-код, размещённый на столике, после чего в браузере автоматически открывается интерактивное цифровое меню. Установка приложения не требуется — всё работает напрямую через веб-интерфейс.
 
-In the project directory, you can run:
+Пользователь может просматривать список блюд, фильтровать их по категориям, изучать описание и цену, добавлять позиции в корзину и видеть итоговую сумму заказа в реальном времени. Интерфейс интуитивно понятен и адаптирован для быстрого взаимодействия.
 
-### `npm start`
+После формирования заказа система генерирует уникальный QR-код, в котором зашифрованы данные выбранных блюд. Этот QR-код выступает как цифровой идентификатор заказа. Официант сканирует его и мгновенно получает полную информацию о заказе через Firebase. Данные сохраняются в облачной базе в реальном времени, что обеспечивает надёжность и синхронизацию между устройствами.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Основная цель проекта — ускорить процесс обслуживания, снизить нагрузку на персонал и минимизировать ошибки, связанные с ручной передачей заказов. Система также помогает кафе оптимизировать рабочие процессы и создать современный цифровой опыт для клиентов.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Техническая реализация включает:
+- React для построения пользовательского интерфейса  
+- Firebase (Firestore / Realtime Database) для хранения и синхронизации данных  
+- Генерацию QR-кодов для передачи информации о заказе  
+- Firebase Hosting для развёртывания проекта  
+- Адаптивную верстку с ориентацией на мобильные устройства  
 
-### `npm test`
+Ключевые возможности системы:
+- Динамическое цифровое меню  
+- Фильтрация блюд по категориям  
+- Корзина с автоматическим пересчётом итоговой стоимости  
+- Генерация уникального QR-кода для каждого заказа  
+- Облачное хранение заказов  
+- Работа в режиме реального времени  
+- Полностью адаптивный интерфейс  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Проект демонстрирует практическое применение современных веб-технологий для решения реальной бизнес-задачи. Система может быть масштабирована и доработана под конкретные требования заведения.
 
-### `npm run build`
+Возможные направления для развития:
+- Интеграция онлайн-оплаты  
+- Административная панель для управления меню и заказами  
+- Отслеживание статусов заказа (принят / готовится / подан)  
+- Push-уведомления  
+- Авторизация и роли персонала  
+- Аналитика продаж  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+QR Cafe Ordering System — это шаг к цифровизации ресторанного бизнеса и созданию более эффективной, быстрой и удобной модели обслуживания.
